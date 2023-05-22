@@ -1,12 +1,172 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
-}
+/* Global styles starts here */
 
 :root {
   --c-1: #272a31;
   --c-2: #ec5242;
   --c-3: #d3d3d3;
 }
+
+/* Global styles ends here */
+
+* {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main section starts here */
+
+main {
+  width: 100%;
+}
+
+/* Main section ends here */
+
+/* Banner starts Here */
+
+.banner {
+  width: 100%;
+  height: 549px;
+  background: url(img/home-bg-mobile.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+/* Banner ends Here */
+
+/* Nav starts here */
+
+nav {
+  width: 92%;
+  min-height: 63px;
+}
+
+.hamburger_icon {
+  width: 31px;
+  height: 27px;
+}
+
+/* Nav ends here */
+
+/* Banner content starts here */
+
+div.banner_content {
+  width: 92%;
+  min-height: 309px;
+}
+
+p.banner_content:nth-child(1) {
+  color: var(--c-2);
+  font-size: 1.5rem;
+}
+
+h1.banner_content {
+  color: var(--c-2);
+  font-size: 2.05rem;
+  font-weight: 1000;
+  text-transform: uppercase;
+}
+
+div.banner_content_description {
+  min-height: 85px;
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;
+}
+
+p.banner_content_description {
+  color: var(--c-1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+h3.banner_content {
+  font-weight: 900;
+  font-size: 20px;
+  color: var(--c-1);
+}
+
+h5.banner_content {
+  font-weight: 700;
+  font-size: 13px;
+}
+
+/* Banner content ends here */
+
+/* Feature Section Starts Here */
+
+section.feature {
+  width: 100%;
+  min-height: 662px;
+  background: url(img/feature-bg-mobile.png) no-repeat;
+  background-size: cover;
+}
+
+section.feature > .wrapper {
+  width: 96%;
+  min-height: 601px;
+}
+
+h3.feature {
+  color: var(--c-3);
+  font-weight: 400;
+  font-size: 20px;
+}
+
+h3.feature > span {
+  width: 30px;
+  height: 0;
+  border: 2px solid var(--c-2);
+  margin-top: 15px;
+}
+
+.feature-box {
+  width: 100%;
+  min-height: 421px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.feature-box > div {
+  width: 100%;
+  min-height: 82px;
+  background-color: #0000004f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #d3d3d3;
+}
+
+.program_icon {
+  width: 57px;
+  height: 51px;
+}
+
+.program_title {
+  font-weight: 700;
+  margin: 0;
+  font-size: 17px;
+  color: var(--c-2);
+}
+
+.program_descp {
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 22px;
+  flex-basis: 191px;
+  margin: 0;
+}
+
+button.feature {
+  width: 300px;
+  height: 68px;
+  background-color: var(--c-2);
+  color: var(--c-3);
+  border: none;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+/* Feature Section Ends Here */
