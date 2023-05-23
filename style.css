@@ -537,5 +537,39 @@ footer {
     height: 18px;
   }
   /* Social Bar Ends Here */
+
+  /* Desktop Nav Starts Here */
+  
+  nav{
+    width: 100%;
+    min-height: 75px;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px;
+  }
+
+  .desktop_nav{
+    width: 39%;
+    min-height: 48px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .desktop_nav > a{
+    color: var(--c-1);
+    text-decoration: none;
+  }
+
+  .desktop_nav button{
+    width: 123px;
+    min-height: 48px;
+    background: none;
+    border: 5px solid var(--c-2);
+    color: var(--c-2);
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  /* Desktop Ends Starts Here */
 }
 /* Desktop version ends here */
