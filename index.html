@@ -22,12 +22,35 @@
 
     <!-- Main section starts here -->
     <main>
+
+        <!-- Social bar starts here -->
+        <section class="social_bar desktop">
+            <div class="social_bar_wrapper">
+                <ul class="m-0 p-0 d-flex justify-content-between align-items-center">
+                    <a href="facebook.com"><li><img class="social_logo" src="img/facebook.png" alt="Facebook"></li></a>
+                    <a href="twitter.com"><li><img class="social_logo" src="img/twitter.png" alt="Twitter"></li></a>
+                    <a href="#"><li>English</li></a>
+                    <a href="#"><li>My Page</li></a>
+                    <a href="#"><li>Logout</li></a>
+                </ul>
+            </div>
+        </section>
+        <!-- Social bar ends here -->
+
         <!-- Banner starts Here -->
-        
         <section class="banner d-flex flex-column align-items-center">
             <!-- Nav section starts here -->
-            <nav class="d-flex align-items-center">
-                <img src="img/hamburger-icon.png" alt="Menu" class="hamburger_icon">
+            <nav class="d-flex align-items-center justify-content-md-around">
+                <img src="img/hamburger-icon.png" alt="Menu" class="hamburger_icon mobile">
+                <a href="index.html" class="desktop"><img src="img/nav-logo.png" alt="Logo" class="nav_logo desktop"></a>
+                <ul class="desktop_nav desktop d-md-flex justify-content-between align-items-center">
+                    <a href="about.html"><li>About</li></a>
+                    <a href="#"><li>Program</li></a>
+                    <a href="#"><li>Join</li></a>
+                    <a href="#"><li>Sponsor</li></a>
+                    <a href="#"><li>News</li></a>
+                    <a href="#"><li><button>CC Campaign</button></li></a>
+                </ul>
             </nav>
             <!-- Nav section ends here -->
 
@@ -47,11 +70,9 @@
             </div>
             <!-- Banner content ends here -->
         </section>
-        
         <!-- Banner ends Here -->
 
         <!-- Feature Section Starts Here-->
-
         <section class="feature d-flex align-items-center justify-content-center">
             <div class="wrapper d-flex flex-column align-items-center justify-content-between">
                 <h3 class="feature d-flex flex-column justify-content-between align-items-center">Main Program <span></span></h3>
@@ -82,17 +103,17 @@
                         <p class="program_descp">Listen to the speakers from various countries about the messages of sharing and opening.</p>
                     </li>
                 </ul>
-                <button class="feature">Join CC Global Summit 2015</button>
+                <button class="feature mobile">Join CC Global Summit 2015</button>
+                <a href="about.html" class="feature_link desktop">See the whole program</a>
             </div>
         </section>
-
         <!-- Feature Section Ends Here-->
 
         <!-- Speakers Section Starts Here -->
 
         <section class="speakers d-flex flex-column align-items-center justify-content-between">
             <h3 class="feature d-flex flex-column justify-content-between align-items-center" id="speakers_title">Featured Speakers<span></span></h3>
-            <ul class="d-flex flex-column justify-content-between align-items-center">
+            <ul class="d-flex flex-sm-column flex-md-row justify-content-between align-items-center">
                 <li class="speakers_box">
                     <img src="img/speaker_01.png" alt="Speaker">
                     <div>
@@ -103,11 +124,86 @@
                         <p class="speakers_details">Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</p>
                     </div>
                 </li>
-                <li class="speakers_box"></li>
+                <li class="speakers_box">
+                    <img src="img/speaker_01.png" alt="Speaker">
+                    <div>
+                        <div class="speakers_details">
+                            <h3 class="speakers_details">Yochai Benkler</h3>
+                            <h5 class="speakers_details">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h5>
+                        </div>
+                        <p class="speakers_details">Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</p>
+                    </div>
+                </li>
+                <li class="desktop speakers_box d-md-flex">
+                    <img src="img/speaker_01.png" alt="Speaker">
+                    <div>
+                        <div class="speakers_details">
+                            <h3 class="speakers_details">Yochai Benkler</h3>
+                            <h5 class="speakers_details">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h5>
+                        </div>
+                        <p class="speakers_details">Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</p>
+                    </div>
+                </li>
+                <li class="desktop speakers_box desktop d-md-flex">
+                    <img src="img/speaker_01.png" alt="Speaker">
+                    <div>
+                        <div class="speakers_details">
+                            <h3 class="speakers_details">Yochai Benkler</h3>
+                            <h5 class="speakers_details">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h5>
+                        </div>
+                        <p class="speakers_details">Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</p>
+                    </div>
+                </li>
+                <li class="desktop speakers_box desktop d-md-flex">
+                    <img src="img/speaker_01.png" alt="Speaker">
+                    <div>
+                        <div class="speakers_details">
+                            <h3 class="speakers_details">Yochai Benkler</h3>
+                            <h5 class="speakers_details">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h5>
+                        </div>
+                        <p class="speakers_details">Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</p>
+                    </div>
+                </li>
+                <li class="desktop speakers_box desktop d-md-flex">
+                    <img src="img/speaker_01.png" alt="Speaker">
+                    <div>
+                        <div class="speakers_details">
+                            <h3 class="speakers_details">Yochai Benkler</h3>
+                            <h5 class="speakers_details">Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School</h5>
+                        </div>
+                        <p class="speakers_details">Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006</p>
+                    </div>
+                </li>
             </ul>
-            <button class="more_speakers">More <span></span></button>
+            <button class="more_speakers mobile">More <span></span></button>
         </section>
         <!-- Speakers Section Ends Here -->
+
+        <!-- Partners Section Starts Here -->
+        <section class="partner">
+            <div class="partner_wrapper">
+                <h3 class="partner_title d-flex flex-column align-items-center" id="partner_title_underline">Partner<span></span></h3>
+                <div class="partner_img_box container-fluid">
+                    <div class="row justify-content-around">
+                        <img src="img/mozilla_logo.png" class="col-4 col-md-2" alt="">
+                        <img src="img/google_logo.png" class="col-4 col-md-2" alt="">
+                        <img src="img/naver_logo.png" class="col-4 col-md-2" alt="">
+                        <img src="img/daumkakao_logo.png" class="col-4 col-md-2" alt="">
+                        <img src="img/airbnb_logo.png" class="col-4 col-md-2" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Partners Section Ends Here -->
+
+        <!-- Footer starts here -->
+        <footer>
+            <div class="footer_wrapper">
+                <img src="img/creative-commons-logo-transparent.png" alt="CCLogo" class="footer_logo">
+                <p class="footer_text">2015 Creative Commons Korea. Some Rights Reserved.</p>
+            </div>
+        </footer>
+        <!-- Footer ends here -->
     </main>
     <!-- Main section ends here -->
 

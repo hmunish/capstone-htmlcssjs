@@ -1,5 +1,4 @@
 /* Global styles starts here */
-
 :root {
   --c-1: #272a31;
   --c-2: #ec5242;
@@ -16,6 +15,14 @@
 
 p {
   margin: 0;
+}
+
+.desktop {
+  display: none;
+}
+
+.speakers_box.desktop {
+  display: none;
 }
 
 /* Main section starts here */
@@ -139,7 +146,7 @@ h3.feature > span {
 .feature-box > li {
   width: 100%;
   min-height: 82px;
-  background-color: #0000004f;
+  background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -277,6 +284,7 @@ button.more_speakers > span {
 div.about_banner_content {
   width: 100%;
   min-height: 451px;
+  gap: 15px 0;
 }
 
 div.about_banner_content > div {
@@ -295,6 +303,7 @@ div.about_banner_content > div {
 .banner_description_box {
   width: 96%;
   min-height: 164px;
+  background-color: #fff;
 }
 
 .about_banner_content_description {
@@ -354,7 +363,7 @@ section.about {
 #underline > span,
 #past_summits_underline > span,
 #partner_title_underline > span {
-  width: 15%;
+  width: 35px;
   border: 2px solid var(--c-2);
 }
 
@@ -487,3 +496,388 @@ footer {
 /* Footer ends here */
 
 /* About page ends here */
+
+/* Desktop version starts here */
+
+@media screen and (min-width: 768px) {
+  /* Global Styles Starts Here */
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: block;
+  }
+
+  /* Global Styles Ends Here */
+
+  /* Social Bar Starts Here */
+
+  .social_bar {
+    width: 100%;
+    padding: 6px 0;
+    background-color: var(--c-1);
+  }
+
+  .social_bar_wrapper {
+    margin-left: 70%;
+  }
+
+  .social_bar ul {
+    list-style: none;
+    width: 229px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .social_bar a {
+    color: var(--c-3);
+    text-decoration: none;
+  }
+
+  .social_logo {
+    height: 18px;
+  }
+
+  /* Social Bar Ends Here */
+
+  /* Banner Starts Here */
+
+  section.banner {
+    min-height: 962px;
+    background-image: url(img/home-bg.png);
+    background-position: 0 75px;
+  }
+
+  /* Banner Ends Here */
+
+  /* Desktop Nav Starts Here */
+
+  nav {
+    width: 100%;
+    min-height: 75px;
+    background-color: #fff;
+    box-shadow: 0 0 5px;
+  }
+
+  .desktop_nav {
+    width: 39%;
+    min-height: 48px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .desktop_nav > a {
+    color: var(--c-1);
+    text-decoration: none;
+  }
+
+  .desktop_nav button {
+    width: 123px;
+    min-height: 48px;
+    background: none;
+    border: 5px solid var(--c-2);
+    color: var(--c-2);
+    font-weight: 800;
+    font-size: 14px;
+  }
+
+  /* Desktop Ends Here */
+
+  /* Banner content starts here */
+
+  div.banner_content {
+    width: 55%;
+    min-height: 650px;
+  }
+
+  p.banner_content:nth-child(1) {
+    font-size: 2.5rem;
+  }
+
+  h1.banner_content {
+    font-size: 4.4rem;
+  }
+
+  div.banner_content_description {
+    min-height: 180px;
+  }
+
+  p.banner_content_description {
+    font-size: 25px;
+    line-height: 36px;
+  }
+
+  h3.banner_content {
+    font-size: 42px;
+  }
+
+  h5.banner_content {
+    font-size: 27px;
+  }
+
+  /* Banner content ends here */
+
+  /* Features section starts here */
+
+  section.feature {
+    min-height: 587px;
+    background-image: url(img/features-desktop-bg.png);
+  }
+
+  section.feature > .wrapper {
+    width: 70%;
+    min-height: 437px;
+    gap: 70px 0;
+  }
+
+  h3.feature {
+    font-size: 30px;
+  }
+
+  h3.feature > span {
+    width: 51px;
+  }
+
+  .feature-box {
+    min-height: 231px;
+    flex-direction: row;
+    gap: 0 10px;
+  }
+
+  .feature-box > li {
+    flex-direction: column;
+    min-height: 231px;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .program_icon {
+    width: 64px;
+    height: 58px;
+  }
+
+  .program_title {
+    font-size: 24px;
+  }
+
+  .program_descp {
+    flex-basis: unset;
+    text-align: center;
+    font-size: 12px;
+    width: 90%;
+  }
+
+  .feature_link {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--c-3);
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-underline-offset: 5px;
+  }
+
+  /* Features section ends here */
+
+  /* Speakers section starts here */
+
+  section.speakers {
+    width: 72%;
+    min-height: 774px;
+  }
+
+  section.speakers > ul {
+    min-height: 677px;
+    flex-wrap: wrap;
+  }
+
+  .speakers_box {
+    width: 49%;
+    min-height: 178px;
+  }
+
+  .speakers_box > img {
+    width: 178px;
+    height: 177px;
+  }
+
+  .speakers_box > div {
+    width: 60%;
+    min-height: 178px;
+    justify-content: space-around;
+  }
+
+  div.speakers_details {
+    min-height: 89px;
+  }
+
+  h3.speakers_details {
+    font-size: 24px;
+  }
+
+  h5.speakers_details {
+    font-size: 15px;
+  }
+
+  p.speakers_details {
+    font-size: 14px;
+  }
+
+  /* Speakers section ends here */
+
+  /* Partners section starts here */
+
+  section.partner {
+    margin-top: 74px;
+    padding: 35px 120px;
+  }
+
+  .partner_img_box {
+    margin-top: 50px;
+  }
+
+  /* Partners section ends here */
+
+  /* Footer starts here */
+
+  footer {
+    padding: 74px 221px;
+  }
+
+  .footer_wrapper {
+    min-height: 98px;
+    justify-content: space-between;
+  }
+
+  .footer_logo {
+    width: 250px;
+    height: 42px;
+  }
+
+  .footer_text {
+    width: 50%;
+    min-height: unset;
+    font-size: 20px;
+  }
+
+  /* Footer ends here */
+
+  /* About page starts here */
+
+  .about.banner {
+    min-height: 798px;
+    background-image: url(img/about-bg.png);
+  }
+
+  div.about_banner_content {
+    width: 64%;
+  }
+
+  h1.banner_content > span {
+    width: 35px;
+    border: 2px solid var(--c-2);
+    margin-top: 34px;
+  }
+
+  .banner_description_box {
+    padding: 35px 65px;
+  }
+
+  .about_banner_content_description {
+    font-size: 14px;
+  }
+
+  .banner_address_box > p {
+    font-size: 16px;
+  }
+
+  .banner_address_box > a {
+    font-size: 17px;
+  }
+
+  /* About section starts here */
+
+  #about_section {
+    min-height: unset;
+    padding: 65px 341px;
+  }
+
+  .about_content_box {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .about_title {
+    width: 100%;
+    height: unset;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  .about_description {
+    font-size: 16px;
+  }
+
+  h3.about_title > span {
+    margin-top: 20px;
+  }
+
+  .about_logo {
+    width: 542px;
+  }
+
+  /* About section ends here */
+
+  /* Past summits section starts here */
+
+  section.past_summits {
+    min-height: 508px;
+  }
+
+  .past_summits_wrapper {
+    width: 62%;
+  }
+
+  .past_summits_title {
+    font-size: 30px;
+  }
+
+  #past_summits_underline > span {
+    margin-top: 20px;
+  }
+
+  .past_summits_description {
+    font-size: 16px;
+  }
+
+  .past_summits_img_box {
+    min-height: 236px;
+    gap: 0 25px;
+  }
+
+  .past_summits_img {
+    width: 432px;
+    min-height: 236px;
+  }
+
+  /* Past summits section ends here */
+
+  /* Footer starts here */
+
+  .desktop_footer {
+    background-color: var(--c-1);
+  }
+
+  .footer_text.ft {
+    color: #fff;
+  }
+
+  /* Footer ends here */
+
+  /* About page ends here */
+}
+
+/* Desktop version ends here */

@@ -31,22 +31,49 @@
 
     <!-- Main section starts here -->
     <main>
+
+        <!-- Social bar starts here -->
+        <section class="social_bar desktop">
+            <div class="social_bar_wrapper">
+                <ul class="m-0 p-0 d-flex justify-content-between align-items-center">
+                    <a href="facebook.com"><li><img class="social_logo" src="img/facebook.png" alt="Facebook"></li></a>
+                    <a href="twitter.com"><li><img class="social_logo" src="img/twitter.png" alt="Twitter"></li></a>
+                    <a href="#"><li>English</li></a>
+                    <a href="#"><li>My Page</li></a>
+                    <a href="#"><li>Logout</li></a>
+                </ul>
+            </div>
+        </section>
+        <!-- Social bar ends here -->
+
         <!-- Banner starts Here -->
         <section class="about banner d-flex flex-column align-items-center">
-            <!-- Nav section starts here -->
-            <nav class="d-flex align-items-center">
-                <img src="img/hamburger-icon.png" alt="Menu" class="hamburger_icon">
+             <!-- Nav section starts here -->
+             <nav class="d-flex align-items-center justify-content-md-around">
+                <img src="img/hamburger-icon.png" alt="Menu" class="hamburger_icon mobile">
+                <a href="index.html" class="desktop"><img src="img/nav-logo.png" alt="Logo" class="nav_logo desktop"></a>
+                <ul class="desktop_nav desktop d-md-flex justify-content-between align-items-center">
+                    <a href="about.html"><li>About</li></a>
+                    <a href="#"><li>Program</li></a>
+                    <a href="#"><li>Join</li></a>
+                    <a href="#"><li>Sponsor</li></a>
+                    <a href="#"><li>News</li></a>
+                    <a href="#"><li><button>CC Campaign</button></li></a>
+                </ul>
             </nav>
             <!-- Nav section ends here -->
+
 
             <!-- Banner content starts here -->
             <div class="about_banner_content m-auto d-flex flex-column align-items-center justify-content-between">
                 <div class="banner_title_box">
-                    <p class="banner_content">"Hello! Sharing World"</p>
-                    <h1 class="banner_content">Creative commons global summit 2015</h1>
+                    <p class="banner_content mobile">"Hello! Sharing World"</p>
+                    <h1 class="banner_content d-flex flex-column align-items-center">Creative commons global summit 2015 <span class="desktop"></span></h1>
                 </div>
                 <div class="banner_description_box">
                     <p class="about_banner_content_description">The Global Summit brings together the community of experts, academics, and activists who comprise the Creative Commons affiliate network in a different country every two years. This year, we hope to expand our invitation list including organizations and individuals.</p>
+                    <p class="desktop about_banner_content_description">This year, we hope to expand our invitation list including organizations and individuals who want to work with us on shared projects that advance the cause of the Commons, free culture and open knowledge.</p>
+                    <p class="desktop about_banner_content_description">So if you're active and engaged in the worlds of open content and knowledge - free software advocates, wikipedians, Open knowledge, galleries, libraries, museums, archives, governments and foundations, lawyers, and activists - we hope you'll consider joining us this year to build a stronger, more vibrant commons together</p>
                 </div>
                 <div class="banner_address_box">
                     <p>Please contact us per Email for nay further questions about CC Global Summit 2015!</p>
@@ -59,10 +86,12 @@
 
         <!-- About Section Starts Here -->
 
-        <section class="about d-flex flex-column align-items-center justify-content-evenly">
+        <section class="about d-flex flex-column align-items-center justify-content-evenly" id="about_section">
             <div class="about_content_box d-flex flex-column align-items-center justify-content-between">
                 <h3 class="about_title" id="underline">Creative Commons Global Summit 2015 Logo <span></span></h3>
                 <p class="about_description">The logo of CC Global Summit 2015 was decided through the logo competition from 8, June to 7, July.</p>
+                <p class="about_description desktop">After online public voting and Selection Committee’s judging process, the logo from Naresh Agrawal won the prize.</p>
+                <p class="about_description desktop">After consultation with Mr. Agrawal, we optimized the prize-winning-logo for this year’s summit as follows:</p>
             </div>
             <img src="img/about_logo.png" class="about_logo" alt="About Logo">
         </section>
@@ -75,7 +104,7 @@
                     <h3 class="past_summits_title" id="past_summits_underline">See the past CC Global Summits<span></span></h3>
                     <p class="past_summits_description">Take a look at the past two CC Global Summits which took place in Buenos Aires and in Warsaw</p>
                 </div>
-                <div class="past_summits_img_box d-flex flex-column justify-content-around">
+                <div class="past_summits_img_box d-flex flex-column flex-md-row justify-content-around">
                     <div class="past_summits_img"></div>
                     <div class="past_summits_img"></div>
                 </div>
@@ -84,16 +113,16 @@
         <!-- Past Summits Section Ends Here -->
 
         <!-- Partners Section Starts Here -->
-        <section class="partner">
+        <section class="partner mobile">
             <div class="partner_wrapper">
                 <h3 class="partner_title d-flex flex-column align-items-center" id="partner_title_underline">Partner<span></span></h3>
                 <div class="partner_img_box container-fluid">
                     <div class="row justify-content-around">
-                        <img src="img/mozilla_logo.png" class="col-4" alt="">
-                        <img src="img/google_logo.png" class="col-4" alt="">
-                        <img src="img/naver_logo.png" class="col-4" alt="">
-                        <img src="img/daumkakao_logo.png" class="col-4" alt="">
-                        <img src="img/airbnb_logo.png" class="col-4" alt="">
+                        <img src="img/mozilla_logo.png" class="col-4 col-md-2" alt="">
+                        <img src="img/google_logo.png" class="col-4 col-md-2" alt="">
+                        <img src="img/naver_logo.png" class="col-4 col-md-2" alt="">
+                        <img src="img/daumkakao_logo.png" class="col-4 col-md-2" alt="">
+                        <img src="img/airbnb_logo.png" class="col-4 col-md-2" alt="">
                     </div>
                 </div>
             </div>
@@ -101,10 +130,11 @@
         <!-- Partners Section Ends Here -->
 
         <!-- Footer starts here -->
-        <footer>
+        <footer class="desktop_footer">
             <div class="footer_wrapper">
-                <img src="img/creative-commons-logo-transparent.png" alt="CCLogo" class="footer_logo">
-                <p class="footer_text">2015 Creative Commons Korea. Some Rights Reserved.</p>
+                <img src="img/creative-commons-logo-transparent.png" alt="CCLogo" class="footer_logo mobile">
+                <img src="img/creative-commons-logo-white.png" alt="CCLogo" class="footer_logo desktop">
+                <p class="footer_text ft">2015 Creative Commons Korea. Some Rights Reserved.</p>
             </div>
         </footer>
         <!-- Footer ends here -->
