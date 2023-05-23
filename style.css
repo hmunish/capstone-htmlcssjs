@@ -18,6 +18,10 @@ p {
   margin: 0;
 }
 
+.desktop{
+  display: none;
+}
+
 /* Main section starts here */
 
 main {
@@ -487,3 +491,51 @@ footer {
 /* Footer ends here */
 
 /* About page ends here */
+
+/* Desktop version starts here */
+
+@media screen and (min-width: 768px) {
+  
+  /* Global Styles Starts Here */
+  
+  .mobile{
+    display: none;
+  }
+
+  .desktop{
+    display: block;
+  }
+  
+  /* Global Styles Ends Here */
+
+  /* Social Bar Starts Here */
+
+  .social_bar{
+    width: 100%;
+    padding: 6px 0;
+    background-color: var(--c-1);
+  }
+
+  .social_bar_wrapper{
+    margin-left: 70%;
+  }
+
+  .social_bar ul{
+    list-style: none;
+    width: 229px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+  }
+  
+  .social_bar a{
+    color: var(--c-3);
+    text-decoration: none;
+  }
+
+  .social_logo{
+    height: 18px;
+  }
+  /* Social Bar Ends Here */
+}
+/* Desktop version ends here */
