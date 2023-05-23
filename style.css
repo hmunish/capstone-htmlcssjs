@@ -737,7 +737,31 @@ footer {
   .partner_img_box{
     margin-top: 50px;
   }
+
   /* Partners section ends here */
+
+  /* Footer starts here */
+
+  footer{
+    padding: 74px 221px;
+  }
+
+  .footer_wrapper{
+    min-height: 98px;
+    justify-content: space-between;
+  }
+
+  .footer_logo{
+    width: 250px;
+    height: 42px;
+  }
+
+  .footer_text{
+    width: 50%;
+    min-height: unset;
+    font-size: 20px;
+  }
+  /* Footer ends here */
 }
 
 /* Desktop version ends here */
