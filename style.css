@@ -322,4 +322,43 @@ div.about_banner_content > div {
   text-decoration: underline;
 }
 
+section.about {
+  width: 100%;
+  min-height: 353px;
+}
+
+.about_content_box {
+  width: 94%;
+  min-height: 138px;
+  text-align: center;
+}
+
+.about_title {
+  width: 64%;
+  height: 76px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--c-1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#underline > span {
+  width: 15%;
+  border: 2px solid var(--c-2);
+}
+
+.about_description {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.about_logo {
+  width: 100%;
+}
+
 /* About page ends here */
