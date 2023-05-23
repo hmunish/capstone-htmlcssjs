@@ -352,7 +352,8 @@ section.about {
 }
 
 #underline > span,
-#past_summits_underline > span {
+#past_summits_underline > span,
+#partner_title_underline > span {
   width: 15%;
   border: 2px solid var(--c-2);
 }
@@ -413,6 +414,49 @@ section.past_summits {
   width: 100%;
   min-height: 184px;
   background-color: #b86f67;
+}
+
+/* Partner section starts here */
+
+section.partner {
+  width: 100%;
+  padding: 20px 0 40px 0;
+  background-color: var(--c-1);
+}
+
+.partner_wrapper {
+  width: 100%;
+}
+
+.partner_title {
+  height: unset;
+  color: var(--c-3);
+  width: 18%;
+  gap: 10px 0;
+}
+
+#partner_title_underline {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#partner_title_underline > span {
+  width: 30px;
+}
+
+.partner_img_box {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.partner_img_box > .row {
+  gap: 10px 0;
+  margin: 0;
+  padding: 0;
+}
+
+.partner_img_box img {
+  height: 100%;
 }
 
 /* About page ends here */
