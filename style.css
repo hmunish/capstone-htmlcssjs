@@ -22,6 +22,10 @@ p {
   display: none;
 }
 
+.speakers_box.desktop {
+  display: none;
+}
+
 /* Main section starts here */
 
 main {
@@ -676,6 +680,52 @@ footer {
   }
 
   /* Features section ends here */
+
+  /* Speakers section starts here */
+
+  section.speakers {
+    width: 72%;
+    min-height: 774px;
+  }
+
+  section.speakers > ul {
+    min-height: 677px;
+    flex-wrap: wrap;
+  }
+
+  .speakers_box {
+    width: 49%;
+    min-height: 178px;
+  }
+
+  .speakers_box > img {
+    width: 178px;
+    height: 177px;
+  }
+
+  .speakers_box > div {
+    width: 60%;
+    min-height: 178px;
+    justify-content: space-around;
+  }
+
+  div.speakers_details {
+    min-height: 89px;
+  }
+
+  h3.speakers_details {
+    font-size: 24px;
+  }
+
+  h5.speakers_details {
+    font-size: 15px;
+  }
+
+  p.speakers_details {
+    font-size: 14px;
+  }
+
+  /* Speakers section ends here */
 }
 
 /* Desktop version ends here */
