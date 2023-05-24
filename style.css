@@ -25,6 +25,10 @@ p {
   display: none;
 }
 
+.dsp_none {
+  display: none;
+}
+
 /* Main section starts here */
 
 main {
@@ -32,6 +36,37 @@ main {
 }
 
 /* Main section ends here */
+
+/* Mobile menu starts here */
+
+.mobile.menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(236, 83, 66, 0.7);
+  backdrop-filter: blur(8px);
+}
+
+.close_icon {
+  width: 24px;
+  margin: 25px;
+  cursor: pointer;
+}
+
+.mobile_nav {
+  list-style: none;
+  font-size: 2rem;
+  padding: 0;
+}
+
+.mobile_nav > a {
+  color: var(--c-3);
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Mobile menu ends here */
 
 /* Banner starts Here */
 
@@ -54,6 +89,7 @@ nav {
 .hamburger_icon {
   width: 31px;
   height: 27px;
+  cursor: pointer;
 }
 
 /* Nav ends here */
