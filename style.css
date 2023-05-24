@@ -295,14 +295,18 @@ button.more_speakers {
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
   text-transform: uppercase;
-  margin-top: 30px;
+  margin: 30px 0;
   font-weight: 700;
   font-size: 11px;
 }
 
-button.more_speakers > span {
-  display: inline-block;
-  background-image: url(img/down-arrow.png);
+.down_icon {
+  width: 8px;
+  margin-left: 8px;
+}
+
+.rota180 {
+  transform: rotateZ(180deg);
 }
 
 /* Speakers Section Ends Here */
