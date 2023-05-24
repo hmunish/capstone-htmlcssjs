@@ -29,6 +29,14 @@ p {
   display: none;
 }
 
+.clr-2 {
+  color: var(--c-2);
+}
+
+#h1_clr {
+  color: var(--c-2);
+}
+
 /* Main section starts here */
 
 main {
@@ -107,10 +115,13 @@ p.banner_content:nth-child(1) {
 }
 
 h1.banner_content {
-  color: var(--c-2);
+  color: transparent;
   font-size: 2.05rem;
   font-weight: 1000;
   text-transform: uppercase;
+  background-image: url(img/orange-bg.jpg);
+  background-position: -700px;
+  -webkit-background-clip: text;
 }
 
 div.banner_content_description {
@@ -462,7 +473,15 @@ section.past_summits {
 .past_summits_img {
   width: 100%;
   min-height: 184px;
-  background-color: #b86f67;
+  background-size: 100% 100%;
+}
+
+.past_summits_img:nth-child(1) {
+  background-image: url(img/about_1.png);
+}
+
+.past_summits_img:nth-child(2) {
+  background-image: url(img/about_2.png);
 }
 
 /* Partner section starts here */
