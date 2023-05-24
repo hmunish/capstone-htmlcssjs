@@ -625,12 +625,15 @@ footer {
   .desktop_nav {
     width: 39%;
     min-height: 48px;
+  }
+
+  .desktop_nav > ul{
     margin: 0;
     padding: 0;
     list-style: none;
   }
 
-  .desktop_nav > a {
+  .desktop_nav a {
     color: var(--c-1);
     text-decoration: none;
   }
