@@ -303,6 +303,7 @@ button.more_speakers {
   width: 100%;
   min-height: 38px;
   border: 1px solid var(--c-3);
+  background-color: #fff;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
   border-radius: 4px;
   text-transform: uppercase;
