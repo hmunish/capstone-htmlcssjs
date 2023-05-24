@@ -3,7 +3,9 @@ const mobileMenu = document.querySelector('.mobile.menu');
 const hamburgerIcon = document.querySelector('.hamburger_icon');
 const closeIcon = document.querySelector('.close_icon');
 const speakersContainer = document.querySelector('#speakers_container');
+const speakersMoreButton = document.querySelector('.more_speakers');
 const downIcon = document.querySelector('.down_icon');
+let hiddenSpeakers;
 const speakersData = [
   {
     id: 1,
@@ -75,6 +77,20 @@ function loadSpeakers() {
                         </li>`;
     speakersContainer.innerHTML += speakerHtml;
   });
+
+  hiddenSpeakers = speakersContainer.querySelectorAll('.desktop');
+}
+
+function loadMoreSpeakers() {
+  if (speakersMoreButton.textContent === 'Less') {
+    speakersMoreButton.childNodes[0].nodeValue = 'More';
+  } else {
+    speakersMoreButton.childNodes[0].nodeValue = 'Less';
+  }
+  downIcon.classList.toggle('rota180');
+  hiddenSpeakers.forEach((e) => {
+    e.classList.toggle('desktop');
+  });
 }
 
 // Toggling Menu Function
@@ -85,6 +101,7 @@ function toggleMenu() {
 }
 
 // Event Listeners
-document.addEventListener('load', loadSpeakers());
+window.addEventListener('load', loadSpeakers);
 hamburgerIcon.addEventListener('click', toggleMenu);
 closeIcon.addEventListener('click', toggleMenu);
+speakersMoreButton.addEventListener('click', loadMoreSpeakers);

@@ -300,9 +300,13 @@ button.more_speakers {
   font-size: 11px;
 }
 
-.down_icon{
+.down_icon {
   width: 8px;
   margin-left: 8px;
+}
+
+.rota180 {
+  transform: rotateZ(180deg);
 }
 
 /* Speakers Section Ends Here */
